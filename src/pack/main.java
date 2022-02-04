@@ -71,8 +71,8 @@ public class main {
 		private static BigInteger EuclideanAlorithm(BigInteger d1, BigInteger d2) { //d1 = e, d2 = m = (p-1)(q-1)
 			BigInteger t1 = one, t2 = zero, q, u1 = zero, v2 = one; //REF
 			while (!d2.equals(zero)){ //d2 != 0
-				q = d1.divide(d2);  //q = e / ((p-1)(q-1))
-				d1 = d1.mod(d2); //d1 = e % (p-1)(q-1)
+			q = d1.divide(d2);  //q = e / ((p-1)(q-1))
+			d1 = d1.mod(d2); //d1 = e % (p-1)(q-1)
 		    	t1 = t1.subtract(q.multiply(t2)); //t1 = t1 -(q*t2)
 		    	u1 = u1.subtract(q.multiply(v2)); //u1 = u1 -(q*v2)
 	    		q = d2.divide(d1);  //q = d2/d1
